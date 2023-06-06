@@ -5,4 +5,4 @@ class GameState(Enum):
     PLAYING = 2
     TRANSITION = 3
     LEVEL_COMPLETED = 4
-    
+    NEXT_LEVEL = 5
