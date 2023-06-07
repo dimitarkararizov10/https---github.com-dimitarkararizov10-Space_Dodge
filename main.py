@@ -326,7 +326,7 @@ def main():
             start_time = time.time()
 
         if game_state == GameState.PLAYING:
-            clock.tick(144)
+            clock.tick(60)
             elapsed_transition_time = time.time() - transition_start_time
             if elapsed_transition_time >= 3:
                 star_count += clock.get_rawtime()
