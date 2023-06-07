@@ -209,7 +209,7 @@ def main():
     elapsed_time = 0
     pause_start_time = 0
 
-    level = 5
+    level = 1
     LIVES = 3
     choice = 1
     STAR_VEL = 10
@@ -368,7 +368,7 @@ def main():
                         pygame.quit()
                     
 
-            if elapsed_time >= level * 1:
+            if elapsed_time >= level * 7:
                 game_state = GameState.LEVEL_COMPLETED
 
 
@@ -417,6 +417,7 @@ def main():
                         pygame.quit()
                     if return_button.collidepoint(mouse_pos):
                         level = 1
+                        LIVES = 3
                         game_state = GameState.MENU
 
 if __name__ == "__main__":
